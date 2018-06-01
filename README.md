@@ -180,7 +180,7 @@ Try these as prefix to your script invocation for a temporary change:
  - `env TERM=rxvt-16color `
  - `env TERM=xterm `
  - `env TERM=xterm-256color `
- - `env TERM=RGB `
+ - `env COLORTERM=truecolor `
  - `env NO_COLOR `
 
 like so:
