@@ -1,0 +1,6 @@
+- https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+- https://gist.github.com/chrisopedia/8754917
+- https://gist.github.com/XVilka/8346728
+- https://no-color.org/
+- http://mkweb.bcgsc.ca/colorblind/
+- http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
