@@ -181,12 +181,12 @@ Not too shabby, eh?
 How do you test how your app will look on terminals  with limited colors?
 Try these as prefix to your script invocation for a temporary change:
 
- - `env TERM=vt100 `
- - `env TERM=rxvt-16color `
- - `env TERM=xterm `
- - `env TERM=xterm-256color `
- - `env COLORTERM=truecolor `
- - `env NO_COLOR `
+ - `env TERM=vt100`
+ - `env TERM=rxvt`
+ - `env TERM=xterm`
+ - `env TERM=xterm-256color`
+ - `env COLORTERM=truecolor`
+ - `env NO_COLOR`
 
 like so:
 
