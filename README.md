@@ -2,7 +2,12 @@
 
 Terminal palettes and themes, without tears.
 
+``` 
+pip install autopalette
+```
+
 **Status: Alpha; being developed.**
+
 
 Do you write python scripts that `print()` text 
 on the command-line terminal? 
