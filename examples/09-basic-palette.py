@@ -26,5 +26,3 @@ print(af("Muted").m)
 print(af("Italic").i)
 print(af("Reversed").r)
 print(af("Underline").u)
-
-print(af("Raw output of an ANSI formatted string.").h1.raw)
