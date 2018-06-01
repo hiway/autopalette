@@ -98,23 +98,23 @@ or read further below how you can design your own.
 
 Here are the various styles built into autopalette.
 
- - `p`: plain-text, or paragraph - as you like to read it.
- - `light`: where color range allows it, lighter text.
- - `dark`: darker text if terminal supports enough colors within palette.
- - `h1`: highlighted text style 1, or header-1.
- - `h2`: 
- - `h3`
- - `h4`
- - `li`: list element.
- - `err`: an error 
- - `warn`: a warning 
- - `info`: a warning 
- - `ok`: a warning 
- - `b`: bold.
- - `i`: italic.
- - `u`: underline.
- - `r`: reversed colors.
- - `raw`: useful to debug, displays the ANSI code instead of applying it.
+- `p`: plain-text, or paragraph - as you like to read it.
+- `light`: where color range allows it, lighter text.
+- `dark`: darker text if terminal supports enough colors within palette.
+- `h1`: highlighted text style 1, or header-1.
+- `h2`: 
+- `h3`
+- `h4`
+- `li`: list element.
+- `err`: an error 
+- `warn`: a warning 
+- `info`: a warning 
+- `ok`: a warning 
+- `b`: bold.
+- `i`: italic.
+- `u`: underline.
+- `r`: reversed colors.
+- `raw`: useful to debug, displays the ANSI code instead of applying it.
 
 Let us try superimposing two styles.
 
@@ -163,13 +163,13 @@ Look at that! Yummy.
 
 Autopalette goes the length to support a handful of palettes.
 
- - GameBoyChocolate
- - GameBoyOriginal
- - Grayscale
- - Oil
- - Arcade
- - CLRS
- 
+- GameBoyChocolate
+- GameBoyOriginal
+- Grayscale
+- Oil
+- Arcade
+- CLRS
+
 If this is exciting to you too, read further below how to create your own!
 
 How does this look on a terminal with only 16 colors?
@@ -181,12 +181,12 @@ Not too shabby, eh?
 How do you test how your app will look on terminals  with limited colors?
 Try these as prefix to your script invocation for a temporary change:
 
- - `env TERM=vt100`
- - `env TERM=rxvt`
- - `env TERM=xterm`
- - `env TERM=xterm-256color`
- - `env COLORTERM=truecolor`
- - `env NO_COLOR`
+- `env TERM=vt100`
+- `env TERM=rxvt`
+- `env TERM=xterm`
+- `env TERM=xterm-256color`
+- `env COLORTERM=truecolor`
+- `env NO_COLOR`
 
 like so:
 
