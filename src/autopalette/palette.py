@@ -4,7 +4,7 @@ from colour import Color
 
 from autopalette.colormatch import ColorPoint, ColorMatch, AnsiCodeType
 from autopalette.utils import parse_color, map_interval
-from colortrans import rgb2short, short2rgb
+from autopalette.colortrans import rgb2short, short2rgb
 
 
 class BasePalette(object):

@@ -26,7 +26,7 @@ def read(*names, **kwargs):
 
 setup(
         name='autopalette',
-        version='0.1.0',
+        version='0.1.0_1',
         license='BSD License',
         description='Terminal palettes and themes, without tears.',
         long_description=read('README.rst'),
