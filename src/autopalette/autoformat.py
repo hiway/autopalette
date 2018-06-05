@@ -15,15 +15,16 @@ from autopalette.utils import (
 
 
 class ColoredString(str):
-    def __new__(cls, body, theme, key=''):
+    def __new__(cls, body, theme, key='', term_colors=0):
         return super().__new__(cls, body)
 
-    def __init__(self, body, theme, key=''):
+    def __init__(self, body, theme, key='', term_colors=0):
         super().__init__()
         self.theme = theme
         self.key = key
         self.render = self.theme.renderer.render
         self._render = self.theme.renderer._render
+        self.term_colors = term_colors
 
     @property
     def _raw(self):
@@ -47,7 +48,7 @@ class ColoredString(str):
 
     @property
     def id256(self):
-        if terminal_colors() == 0:
+        if self.term_colors == 0:
             return self.copy(self._body)
         if self.key:
             color = parse_color(self.key)
@@ -223,4 +224,4 @@ class AutoFormat(object):
             content = self.fix_text(content)
         if self._need_emoji_fix:
             content = self.fix_emoji(content, ':')
-        return ColoredString(content, theme=self.theme, key=key)
+        return ColoredString(content, theme=self.theme, key=key, term_colors=self.term_colors)
